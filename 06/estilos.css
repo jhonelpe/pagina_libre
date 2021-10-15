@@ -1,0 +1,19 @@
+html{
+    background-color: hsla(197, 69%, 95%, 0.972);
+    background-image: url("./rain.webp") ;
+    background-size: 50% ;
+
+}
+.class-google{
+    text-shadow: 5px 5px gray;
+    text-decoration: none;
+    color: black;
+    background-color: #f09889;
+
+}
+.calcular{
+    width: 200px;
+    height: min(200px , 100px);
+    background-color: green ;
+    margin: 0px auto;
+}
