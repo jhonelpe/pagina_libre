@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+            border: 4px solid red;
+            grid-template-areas: 
+                                "a a n v"
+                                "a a am v "
+                                "r r r v"
+                                "ao m m v"
+                                "ao g ac v";
+        }
+        .hijo_A{
+            background-color: orange;
+            grid-template-areas: a;
+        }
+        .hijo_B{
+            background-color: pink;
+            grid-template-areas: n;
+        }
+        .hijo_C{
+            background-color: blue;
+            grid-template-areas: v;
+        }
+        .hijo_D{
+            background-color: black;
+            grid-template-areas: am;
+        }
+        .hijo_E{
+            background-color: red;
+            grid-template-areas: r;
+        }
+        .hijo_F{
+            background-color: green;
+            grid-template-areas: ao;
+        }
+        .hijo_G{
+            background-color: rgb(75, 75, 194);
+            grid-template-areas: g;
+        }
+        .hijo_H{
+            background-color: purple;
+            grid-template-areas: ac;
+        }
+        @media (max-width: 600px) {
+            .container{
+            background-color: black;
+            flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item hijo_A">A</div>
+        <div class="grid-item hijo_B">B</div>
+        <div class="grid-item hijo_C">C</div>
+        <div class="grid-item hijo_D">D</div>
+        <div class="grid-item hijo_E">E</div>
+        <div class="grid-item hijo_F">F</div>
+        <div class="grid-item hijo_G">G</div>
+        <div class="grid-item hijo_H">H</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+div.div-principal{
+    background-color: red;
+    top: 50px;
+    left: 30px;
+    z-index: 10;
+}
+div.div-secundario{
+    background-color: blue;
+    top: 100px;
+    left: 80px;
+    z-index: 15;
+}
+div.div-terciario{
+    background-color: yellow;
+    top: 150px;
+    left: 140px;
+    z-index: 1;
+}
